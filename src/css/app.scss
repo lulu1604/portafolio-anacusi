@@ -1,1 +1,42 @@
-// app global css in SCSS form
+/* Fuente principal: Poppins */
+/* Fuente global sin romper iconos */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Asegura la fuente correcta para Font Awesome */
+.fa-solid, .fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900;
+}
+.fa-regular, .far {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 400;
+}
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400;
+}
+
+/* Fuente secundaria (Montserrat) para títulos */
+h1, h2, h3, .text-h1, .text-h2, .text-h3, .text-h4 {
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 0.5px;
+}
+
+/* Extra: mejora visual del texto */
+p, .text-body1, .text-subtitle1 {
+  line-height: 1.6;
+  
+
+.page-fade {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+html {
+  scroll-behavior: smooth;
+}}
